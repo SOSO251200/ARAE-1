@@ -15,7 +15,7 @@ catch (Exception $e)
     echo "<script type='text/javascript'>alert('ERREUR');</script>";
 }
 
-//Sends SQL Query
+//Sends SQL query
 $query = $bdd->query("SELECT * FROM user WHERE email = '$userId';");
 
 //Gets and sorts out the resulting array
@@ -25,7 +25,6 @@ $answer = $result['password'];
 if (hash('SHA256',$userPassword) == $answer){
 
     //Saves current session data
-
     $_SESSION['user_id'] = $result['user_id'];
     $_SESSION['firstname'] = $result['firstname'];
     $_SESSION['lastname'] = $result['lastname'];
