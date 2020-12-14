@@ -8,6 +8,7 @@ body{
 	margin:0;
 	padding: 0;
 	background-color: white;
+	font-family: 'Poppins', sans-serif;
 }
 
 		/* menu */
@@ -23,6 +24,7 @@ header{
 	left: 0;
 	white-space: nowrap;
 	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
 }
 
 nav{
@@ -57,20 +59,19 @@ a:hover {
 
 	list-style: none;
 	display: inline-block;
-
 }
 
 #menu li a{
 
 	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
 	padding: 5px;
 	display: block;
 }
 
 /* mouse over menu */
 #menu li a:hover {
-  background-color: grey;
-  
+  	background-color: grey;
 }
 
 #connexionButton{
