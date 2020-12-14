@@ -18,19 +18,24 @@
 
 
 	<section id="idSection">
-		<form>	
+		<form action="checkPswd.php" method="post">
 					<!-- voir double identification : pseudo ou adr_mail -->
 
-				<p>Adresse mail : <br>
-					<input type="text" name="mail" id="id" placeholder="Entrer votre adresse e-mail"></p>
-				<p>Mot de passe : <br>
-					<input type="text" name="password" id="password" placeholder="Entrer votre mot de passe"></p>
+                <label for="id">Email</label>
+                <br>
+                <input type="text" id="id" name="id">
+                <br>
+                <label for="password">Mot de passe</label>
+                <br>
+                <input type="text" id="password" name="password">
+                <br><br>
+                <div>
+                    <input type="radio" id="Oui" name="doubleAuth" value="Oui1">
+                    <label for="Oui1">Oui</label>
 
-				<input type="checkbox" name="ouiCheck">
-				<label for="ouiCheck">Oui</label><br>
-				<input type="checkbox" name="nonCheck">
-				<label for="nonCheck">Non</label><br>
-
+                    <input type="radio" id="Non" name="doubleAuth" value="Non1">
+                    <label for="Non1">Non</label>
+                </div>
 				<!-- renommer-->
 
 				<input class="button" type="submit" name="submit" value="Verifier" />
